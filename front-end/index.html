@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Hello!</title>
+
+		<!-- import the webpage's stylesheet -->
+		<link rel="stylesheet" href="./style.css" />
+
+		<!-- import the webpage's javascript file -->
+		<script type="module" src="./scripts/main.js" defer></script>
+	</head>
+	<body>
+		<h1>AJ-ASSIST Control Panel</h1>
+
+		<div id="form-section">
+			<label for="subject">Onderwerp:</label>
+			<input type="text" id="subject" placeholder="bv. dancing robot in space" />
+
+			<label for="theme">Thema:</label>
+			<input type="text" id="theme" placeholder="bv. steampunk" />
+
+			<label for="background">Achtergrond:</label>
+			<select id="background">
+				<option value="none">Geen</option>
+				<option value="tunnel">Tunnel</option>
+				<option value="spiral">Spiraal</option>
+				<option value="waving">golvend</option>
+				<option value="pulsing">puls</option>
+			</select>
+		</div>
+
+		<div id="controls">
+			<button id="toggle-audio">Start</button>
+
+			<label for="audioSourceSelect">Audio input:</label>
+			<select id="audioSourceSelect"></select>
+		</div>
+
+		<p id="bpm-display">BPM: -</p>
+		<p id="genre-display">Genre: -</p>
+
+		<div id="activation-display"></div>
+	</body>
+</html>
