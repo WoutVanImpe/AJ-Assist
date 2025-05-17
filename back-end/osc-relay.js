@@ -2,17 +2,17 @@ const osc = require("osc");
 const express = require("express");
 const WebSocket = require("ws");
 
-const localAdres = "192.168.0.x";
-const remoteAdres = "192.168.0.x";
+const localAddress = "192.168.0.x";
+const remoteAddress = "192.168.0.x";
 
-const WS_PORT = 9001; 
-const OSC_PORT = 9000; 
+const WS_PORT = 9001;
+const OSC_PORT = 9000;
 
 const udpPort = new osc.UDPPort({
-	localAddress: localAdres,
-	localPort: 57121, 
-	remoteAddress: remoteAdres, 
-	remotePort: OSC_PORT, 
+	localAddress: localAddress,
+	localPort: 57121,
+	remoteAddress: remoteAddress,
+	remotePort: OSC_PORT,
 });
 udpPort.open();
 
@@ -35,8 +35,8 @@ wss.on("connection", (ws) => {
 });
 
 const fromResolume = new osc.UDPPort({
-	localAddress: myAdress, 
-	localPort: 7400, 
+	localAddress: myAdress,
+	localPort: 7400,
 });
 
 fromResolume.on("message", (oscMsg) => {
