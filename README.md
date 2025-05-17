@@ -11,18 +11,18 @@ AJ-Assist is an interactive audiovisual tool that connects Resolume, TouchDesign
 
 ## Up & running🏃‍➡️
 - Open the terminal and insert the following lines:
-```bash
-    $ cd back-end
-    $ npm install
+```properties
+    cd back-end
+    npm install
 ```
 - Go to the osc-relay.js file and insert your local and remote (other pc) IP in the localAddress and remoteAddress variable
 - Open the integrated terminal of the back-end folder and run the osc-relay file
-```bash
-    $ node osc-relay.js
+```properties
+    node osc-relay.js
 ```
   or
-```bash
-    $ nodemon osc-relay.js
+```properties
+    odemon osc-relay.js
 ```
 - Go to the front-end folder and open the index.html file with live server
 - Open the Touchdesigner file and insert your local IP in the IP_of_this_device node
