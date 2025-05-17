@@ -2,16 +2,16 @@ const osc = require("osc");
 const express = require("express");
 const WebSocket = require("ws");
 
-const myAdress = "192.168.0.x";
-const remoteAdress = "192.168.0.x";
+const localAdres = "192.168.0.x";
+const remoteAdres = "192.168.0.x";
 
 const WS_PORT = 9001; 
 const OSC_PORT = 9000; 
 
 const udpPort = new osc.UDPPort({
-	localAddress: myAdress,
+	localAddress: localAdres,
 	localPort: 57121, 
-	remoteAddress: remoteAdress, 
+	remoteAddress: remoteAdres, 
 	remotePort: OSC_PORT, 
 });
 udpPort.open();
